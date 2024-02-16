@@ -1,15 +1,18 @@
 .main {
   padding-left: 13.3rem;
   padding-right: 5rem;
-  overflow: hidden;
-  /* height: 100vh; */
 }
 
 .items {
+  padding-right: 1rem;
+  padding-bottom: 15rem;
   display: flex;
   flex-direction: column;
-  overflow-y: scroll;
+  max-height: 100vh;
   gap: 1.6rem;
+  overflow-y: scroll;
+  /* scrollbar-color: var(--grey-2) transparent;
+  scrollbar-width: thin; */
 }
 
 .item {

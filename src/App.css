@@ -60,3 +60,25 @@ body {
   max-height: 100vh;
   overflow: hidden;
 }
+
+/* width */
+*::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 4px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: var(--grey-4);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--grey-3);
+}
