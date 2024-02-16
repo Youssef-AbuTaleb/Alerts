@@ -1,0 +1,132 @@
+.nav {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0.7rem;
+  display: flex;
+
+  flex-direction: column;
+  /* padding-left: 1.5rem; */
+  padding: 2.9rem 0 2.6rem;
+  background-color: var(--grey-7);
+  border-radius: 0;
+
+  height: 100vh;
+  width: 8rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: var(--shadow);
+}
+
+.logo {
+  cursor: pointer;
+  width: 5rem;
+  margin: 0 auto;
+  margin-bottom: 4.6rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-items {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  line-height: 28.5px;
+  text-transform: capitalize;
+  color: var(--grey-3);
+}
+
+.nav-item:hover {
+  color: #fff;
+}
+
+.nav-item img {
+  scale: 1.2;
+  transition: all 0.3s ease-in-out;
+}
+
+.active {
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  margin-top: auto;
+}
+
+.user {
+  display: flex;
+}
+
+.user p:first-of-type {
+  color: #fff;
+  font-weight: 700;
+}
+.user p:last-of-type {
+  color: var(--grey-1);
+  font-weight: 600;
+}
+
+.copyright {
+  color: var(--grey-4);
+  font-weight: 400;
+}
+
+/* Animation */
+/* Initial State */
+.nav-item {
+  gap: 0;
+}
+.nav-item p,
+.user p:first-of-type,
+.user p:last-of-type,
+.copyright {
+  transition: all 0.3s;
+  font-size: 0;
+}
+
+/* Hover State */
+.nav:hover {
+  width: 18rem;
+  border-radius: 8px;
+}
+.nav:hover .nav-item {
+  gap: 1rem;
+}
+.nav:hover .user {
+  gap: 1.4rem;
+}
+
+.nav:hover .nav-item p {
+  font-size: 19px;
+}
+
+.nav:hover .user p:first-of-type {
+  font-size: 15px;
+}
+.nav:hover .user p:last-of-type {
+  font-size: 13px;
+}
+.nav:hover .copyright {
+  font-size: 14px;
+}
+.nav:hover .logo {
+  width: 12.4rem;
+}
+.nav:hover .nav-item img {
+  scale: 1;
+}
