@@ -2,7 +2,7 @@ import classes from "./Header.module.css";
 
 import notificationIcon from "../../assets/svg/general/notifications.svg";
 import SearchInput from "../ui/SearchInput";
-function Header() {
+function Header({ showFilter }) {
   return (
     <header className={classes.header}>
       <h1 className={classes.title}>
@@ -15,6 +15,10 @@ function Header() {
         <img src={notificationIcon} alt="notifications bell" />
         <span>6</span>
       </div>
+
+      <button className={classes["filter-btn"]} onClick={showFilter}>
+        Filters
+      </button>
     </header>
   );
 }

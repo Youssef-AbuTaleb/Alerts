@@ -25,3 +25,12 @@
   text-decoration: underline;
   color: var(--accent);
 }
+
+@media only screen and (max-width: 800px) {
+  .container {
+    padding: 2rem 3rem;
+  }
+  .container p:last-child {
+    max-width: 100%;
+  }
+}

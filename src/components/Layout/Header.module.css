@@ -31,6 +31,9 @@
 /* Notification Icon */
 .notification {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .notification span {
   width: 1.5rem;
@@ -46,4 +49,52 @@
   font-weight: 700;
   line-height: 16px;
   text-align: center;
+}
+
+.filter-btn {
+  display: none;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+  border-radius: 6px;
+  background: var(--green);
+  border: none;
+  outline: none;
+  position: relative;
+}
+
+@media only screen and (max-width: 900px) {
+  .header {
+    padding-left: 10.6rem;
+    padding-right: 2rem;
+  }
+  .notification {
+    position: relative;
+    margin-right: 1.5rem;
+  }
+  .filter-btn {
+    display: block;
+  }
+  .title {
+    font-size: 32px;
+    line-height: 58px;
+    margin-right: 1.5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* Title */
+  .title {
+    text-transform: uppercase;
+    color: var(--grey-8);
+    font-size: 32px;
+    line-height: 32px;
+    margin-right: 1.8rem;
+  }
+
+  .title span {
+    margin-right: 0.5rem;
+  }
 }
