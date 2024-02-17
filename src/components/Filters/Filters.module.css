@@ -1,0 +1,9 @@
+.filters {
+  padding: 1.7rem 1.6rem 2.2rem 2.5rem;
+  margin-top: 10rem;
+  width: 41.9rem;
+  max-height: 87vh;
+  background-color: var(--grey-7);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}

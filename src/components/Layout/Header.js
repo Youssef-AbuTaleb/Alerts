@@ -1,7 +1,7 @@
 import classes from "./Header.module.css";
 
 import notificationIcon from "../../assets/svg/general/notifications.svg";
-import searchIcon from "../../assets/svg/general/search.svg";
+import SearchInput from "../ui/SearchInput";
 function Header() {
   return (
     <header className={classes.header}>
@@ -9,10 +9,7 @@ function Header() {
         <span></span>Alerts
       </h1>
 
-      <div className={classes.input}>
-        <input placeholder="Search By..." />
-        <img src={searchIcon} alt="search" />
-      </div>
+      <SearchInput placeholder="Search By..." />
 
       <div className={classes.notification}>
         <img src={notificationIcon} alt="notifications bell" />

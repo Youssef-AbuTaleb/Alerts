@@ -1,0 +1,30 @@
+/* Search Input */
+.input {
+  position: relative;
+  flex: 1;
+  margin-right: 1.4rem;
+}
+.input input {
+  padding: 0.7rem 2rem;
+  width: 100%;
+  background-color: var(--grey-5);
+  height: 2.7rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+.input input::placeholder {
+  color: var(--grey-2);
+}
+.input input:focus {
+  background-color: var(--grey-4);
+}
+
+.input img {
+  cursor: pointer;
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}

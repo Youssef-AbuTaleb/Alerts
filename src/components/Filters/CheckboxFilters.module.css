@@ -1,0 +1,11 @@
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-bottom: 2.8rem;
+}
+
+.row {
+  display: flex;
+  gap: 12.5rem;
+}

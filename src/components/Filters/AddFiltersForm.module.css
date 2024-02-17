@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-filters {
+  padding: 0.8rem 0 2.7rem 1.6rem;
+}
+
+.add-filters .title {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.inp {
+  margin-bottom: 10rem;
+}
+
+.card {
+  border-radius: 0.7rem;
+  background-color: var(--grey-6);
+}

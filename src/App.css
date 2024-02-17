@@ -18,6 +18,7 @@
   --grey-1: #979797;
   --grey-2: #737373;
   --grey-3: #5d5d5d;
+  --grey-35: #494949;
   --grey-4: #424242;
   --grey-45: #414040;
   --grey-5: #313131;
@@ -81,4 +82,16 @@ body {
 /* Handle on hover */
 *::-webkit-scrollbar-thumb:hover {
   background: var(--grey-3);
+}
+
+/* GENERAL CLASSES */
+.row-container {
+  display: flex;
+}
+
+.col-container {
+  /* width: 100%; */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
